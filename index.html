@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<meta charset="UTF-8">
+  	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  	<meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>countdown time</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200&family=Red+Hat+Text:wght@300&display=swap" rel="stylesheet">
+    </head>
+    <body>  
+    <section id="countdown">
+        <div class="container flex flex-col items-center mx-auto ">
+            <!-- heading -->
+            <div class="flex mt-48 sm:mt-52">
+                <h2 class="flex text-purple font-bold text-xl text-white sm:text-3xl md:text-4xl mx-auto text-center ">WE'RE LAUNCHING SOON</h2>
+            </div>
+
+            <!-- timecount -->
+        
+            <div class="flex sm:max-w-sm sm:space-x-2 sm:items-center max-w-lg mt-8 md:space-x-8 items-center justify-center ">
+            
+                <div class="days flex flex-col ">
+                    <div class="flex rounded  md:p-8 sm:p-6 mb-2 text-brightColor font-bold text-4xl bg-darkColor" id="days">00</div>
+                    <div class="flex items-center justify-center font-bold text-sm space-x-12 text-darkBrownColor ">
+                        <p>DAYS</p>
+                    </div>
+                </div>
+                <div class="hours flex flex-col">
+                    <div class="flex rounded md:p-8 sm:p-6 mb-2 text-brightColor font-bold text-4xl bg-darkColor" id="hours">00</div>
+                    <div class="flex items-center justify-center font-bold text-sm space-x-12 text-darkBrownColor ">
+                        <p>HOURS</p>
+                    </div>
+                </div>
+                <div class="minutes flex flex-col">
+                    <div class="flex rounded md:p-8 sm:p-6 mb-2 text-brightColor font-bold text-4xl bg-darkColor" id="minutes">00</div>
+                    <div class="flex items-center justify-center font-bold text-sm space-x-12 text-darkBrownColor ">
+                        <p>MINUTES</p>
+                    </div>
+                </div>
+                <div class="seconds flex flex-col ">
+                    <div class="flex rounded md:p-8 sm:p-6 mb-2 text-brightColor font-black text-4xl bg-darkColor" id="seconds">00</div>
+                    <div class="flex items-center justify-center font-bold text-sm space-x-12 text-darkBrownColor ">
+                        <p>SECONDS</p>
+                    </div>
+                </div>
+            
+            </div>
+            <div class="flex flex-row space-x-2 md:mt-6 sm:mt-8 text-brightColor ">
+                <button class="flex  text-center rounded p-6 font-bold bg-darkColor hover:text-darkColor transition-all hover:bg-brightColor"  id="start">Start </button>
+                <button class="flex  text-center rounded p-6 font-bold bg-darkColor hover:text-darkColor transition-all hover:bg-brightColor"  id="reset">Reset</button>
+            </div>
+
+             <!-- icon -->
+             <div class="flex items-center relative mx-auto md:mt-12 sm:mt-60 space-x-6">
+                <img class=" flex cursor-pointer fill-brightColor hover:fill-bg-brightColor" src="images/icon-facebook.svg">
+                <img class=" flex cursor-pointer" src="images/icon-pinterest.svg">
+                <img class=" flex cursor-pointer" src="images/icon-instagram.svg">
+                <!-- <img class=" flex absolute -z-2" src="images/pattern-hills.svg"> -->
+
+            </div>
+        </div>
+    </section>
+
+    <script src="action.js"></script>
+  </body>
+</html>
